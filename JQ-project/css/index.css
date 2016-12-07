@@ -1,0 +1,414 @@
+	body{
+				margin: auto;
+				width: 1200px;
+			}
+			img{
+				display: block;
+			}
+			
+			/*导航轮播*/
+			#nav{
+				width: 1200px;
+				height: 460px;
+				margin: auto;
+				margin-top: 25px;
+				margin-bottom:23px;
+				
+			}
+			#nav .nav-left{
+				width: 150px;
+				height: 460px;
+				position: relative;
+				margin-right:20px ;
+				float: left;
+			}
+			#nav .NL-top h1{
+				font-size:16px;
+				font-weight: bolder;
+				line-height: 24px;
+				margin-bottom: 6px;
+				cursor: pointer
+			}
+			
+			#nav .nav-left .NL-top li{
+				text-align: center;
+				float: left;
+				line-height: 21px;
+				margin-right: 22px;
+				cursor: pointer;
+			}
+			#nav .nav-left .NL-top li:hover{
+				color: #f76045;
+			}
+			#nav .nav-left .NL-top{
+				height: 109px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			#nav .NL-bottom{
+				position: relative;
+			}
+			#nav .NL-bottom h1{
+				font-size:16px;
+				font-weight: bolder;
+				line-height: 39px;
+				margin-top: 6px;
+				
+			}
+			#nav .NL-bottom ul{
+				text-align: center;
+				
+			}
+			
+			#nav .NL-bottom li{
+				position: relative;
+				width: 148px;
+				height: 30px;
+				font-size: 14px;
+				line-height: 30px;
+				color:#6A6A6A ;
+			}
+			#nav .NL-bottom li i{
+				position: absolute;
+				left: 20px;
+				top: 10px;
+			}
+			#nav .NL-bottom li img{
+				position: absolute;
+				right: 5px;
+				top: 10px;
+				display: none;
+			}
+			.Nhover{
+				background:#f76045;
+			}
+			#nav .Nhover li{
+				width: 146px;
+				height: 28px;
+				color: #fff;
+				border: 1px solid #CCCCCC;
+				/*background: url(img/index/Nav-1.gif) no-repeat right center;*/
+			}
+			.Nhover a{
+				color: #fff;
+			}
+			.Nhover i{
+				color: #fff;
+			}
+			#nav .NL-bottom .Nhover img{
+				display:block;
+			}
+			#inside{
+				width: 162px;
+				height: 458px;
+				position:absolute ;
+				right: -162px;
+				top: 0;
+				border: 1px solid #CCCCCC;
+				background: black;
+				display: none;
+				z-index: 99;
+			}
+			
+			
+			
+			/*轮播图部分*/
+			#nav .nav-middle{
+				width: 820px;
+				height: 460px;
+				/*background: url(img/index/2b726fa2085796bf0016ae9b97d37900.jpg) no-repeat;
+				*/
+				margin-right:20px ;
+				float: left;
+			}
+			.banner{
+				width:820px;
+				height: 460px;
+				position: relative;
+				overflow: hidden;
+			}
+			.banner li{
+				position: absolute;
+				/*opacity: 0;*/
+			}
+			.count{
+				position: absolute;
+				bottom: 15px;
+				left: 360px;
+			}
+			.count li {
+				width: 11px;
+				height: 11px;
+				background: #71706e;
+				border-radius:50px ;
+				float: left;
+				margin-right:12px ;
+				position: relative;
+				cursor: pointer;
+			}
+			.pageUp{
+				width: 73px;
+				height: 66px;
+				position: absolute;
+				left: 50px;
+				top: 50%;
+				background: url(../img/index/cut_arrows.png);
+				background-position: 0 0;
+				opacity: 0;
+				cursor: pointer;
+			}
+			.pageDown{
+				width: 73px;
+				height: 66px;
+				position: absolute;
+				top: 50%;
+				right:50px;
+				background: url(../img/index/cut_arrows.png);
+				background-position: 0 -67px;
+				opacity: 0;
+				cursor: pointer;
+			}
+			.Bhover{
+				background: orange;
+			}
+			/*.Bhover{
+				background: orange;
+			}*/
+			
+			#nav .nav-right{
+				width: 190px;
+				height: 220px;
+				float: right;
+			}
+			#nav .nav-right a{
+
+				display: block;
+			}
+			#nav .nav-right a[class=p1]{
+				margin-bottom: 20px;
+			}
+			
+			
+			
+			
+			/*热门推荐*/
+			#hots{
+				width: 1200px;
+				height: 922px;
+				margin: auto;
+			}
+			em{
+			font-size: 12px;
+			font-family: "Microsoft YaHei"; 
+			}
+			.H-top{
+				width: 1200px;
+				height: 778px;
+				
+			}
+			.H-bot{
+				width: 1200px;
+				height: 120px;
+			}
+			.H-bot img{
+				float: left;
+			}
+			
+			
+			/*电梯属性*/
+			.G-floor{
+				width: 1200px;
+				height: 46px;
+				/*left: 2.7%;*/
+				top: 0;
+				background: #fff;
+				margin: auto;
+			}
+			/*商品目录*/
+			#goods{
+				width: 1200px;
+				height: 5475px;
+				background: #f5f5f5;
+				padding-top: 20px;
+				margin: auto;
+			}
+			
+			#floor{
+				
+			}
+			#floor li {
+				width: 128px;
+			    height: 46px;
+			    text-align: center;
+			    float: left;
+			    margin-right: 2px;
+			    font: 14px/46px "宋体";
+			    font-weight: bold;
+			    color: #666;
+			    cursor: pointer;
+			}
+			.G-floor #floor li:hover{
+				background-color: #F4614D;
+    			color: #fff;
+			}
+			.G-floor #floor li .G-hover{
+				background-color: #F4614D;
+    			color: #fff;
+			}
+			.current{
+				background-color: #e44715;
+    			color: #fff;
+			}
+			.floorName {
+    			font: bold 28px/28px "Microsoft YaHei";
+   				color: #121212;
+   				padding: 15px 0 25px;
+			}
+			/*各个楼层的属性*/
+			.J-floor{
+				width: 1200px;
+				height:1253px;
+			}
+			.J-floor ul li{
+				width: 280px;
+   				height: 369px;
+   				float: left;
+   				margin: 0 26px 26px 0;
+    			z-index: 10;
+				background: #fff;
+				box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+			}
+			.J-floor ul li.F-good{
+				width: 586px;
+    			height: 369px;
+			}
+			
+			.floor1{
+				
+			}
+			.floor2{
+			/*	background: red;*/
+			}
+			.floor3{
+				/*background: greenyellow;*/
+			}
+			.floor4{
+				height:858px ;
+			/*	background: black*/
+			}
+			.floor5{
+				height:858px ;
+			/*	background: deepskyblue;*/
+			}
+			.imgbox{
+			    width: 280px;
+			    height: 280px;
+			}
+			.imgbox img{
+			    width: 280px;
+			    height: 280px;
+			}
+			.re-gift-del {
+			    height: 22px;
+			    line-height: 22px;
+			    color: #999;
+			    padding-top: 2px;
+			    text-decoration: line-through;
+			}
+			.re-gift-price {
+			    margin-top: -4px;
+			    margin-right: 17px;
+			    margin-left: 17px;
+			}
+			.eval-cont {
+			    width: 246px;
+			    line-height: 22px;
+			    height: 22px;
+			    color: #999;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    font-family: "宋体";
+			    margin: 2px auto 0;
+			}
+			.re-gift-p .price {
+			    color: #666;
+			    font-size: 18px;
+			}
+			.re-gift-p a.eval-num {
+		    color: #999;
+		    margin-top: 6px;
+		    font-family: "宋体";
+		    float: right;
+			}
+			.re-gift-p a.eval-num:hover{
+			    color: #f4614d;
+			}
+			
+			
+			
+			
+			
+			
+			#foot-link{
+				width: 1200px;
+				height: 502px;
+				border-right: none;
+				border-left: none;
+				background:#f5f5f5;
+				margin-bottom:56px ;
+				margin: auto;
+
+			}
+			#foot-link .freind-link{
+				width: 1198px;
+				height: 502px;
+				border: 1px solid #dfdfdf;
+				background: #fff;
+				padding-top: 20px;
+			}
+			.FL-title{
+				font-size: 20px;
+			    font-weight: bold;
+			    font-family: 微软雅黑;
+			    padding: 20px 0 0;
+			}
+			.F-left{
+				height: 450px;
+			    width: 300px;
+			    float: left;
+			    padding-left: 20px;
+			    border-right: 1px #ccc solid;
+			}
+			.Dif-op{
+				padding: 12px 0;
+   				width: 270px;
+  				height: 85px;
+    			float: left;
+				padding: 12px 0;
+			}
+			#foot-link a{
+				color: #999;
+			    line-height: 1.8;
+			    white-space: nowrap;
+			    padding-right: 10px;
+			}
+			#foot-link a:hover{
+				color: #f4614d;
+			}
+			#foot-link .Dif-op .Dif-T{
+				font-size: 15px;
+			    font-weight: bold;
+			    color: #000000;
+			    line-height: 2;
+			}
+			#foot-link .Dif-op .Dif-T a{
+				color: #000000;
+			}
+			#foot-link .Dif-op .Dif-T a:hover{
+				color: #f4614d;
+			}
+			.F-right{
+				width: 860px;
+			    float: left;
+			    padding-left: 10px;
+	    	}

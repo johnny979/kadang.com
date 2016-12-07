@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			html{
+				background: url(img/千库网-色彩背景.jpg) no-repeat;
+				background-size: cover;
+			}
+			#info {
+				width: 400px;
+				height: 600px;
+				margin: 0 auto;
+			}
+			input {
+				font-size: 16px;
+				height: 48px;
+				padding-left: 20px;
+				margin-left: 30px;
+				border: 1px solid #9c6082;
+				float: right;
+			}
+			input[name=account],input[name='password'],input[name='isPsw'],input[name=username], input[name=mail] {
+				width: 240px;
+				
+			}
+			input[name=submit] {
+				width: 400px;
+				height: 50px;
+				background-color: #8e488e;
+				font-weight: bold;
+				color: #fff;
+				border-radius: 10px;
+			}
+			p {
+				height: 50px;
+				line-height: 50px;
+				text-align: right;
+				border: 1px solid #ddd;
+				margin-top: 20px;
+				font-weight:bolder ;
+				color: black;
+			}
+			p.last {
+				border: none;
+			}
+			i{
+				display: block;
+				float: left;
+				margin-top:15px ;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$("#sub").click(function(){
+				$.ajax({
+					type:"post",
+					url:"http://10.16.151.33/course/api/api/Student/Login",
+					async:true,
+					data:{
+						account:$('#account').val(),
+						password:$('#password').val(),
+					},
+					success:function(data){
+						console.log(data);
+						if(data.status){
+							$.ajax({
+								type:"get",
+								url:"http://10.16.151.33/course/api/api/file/Download",
+								async:true,
+								data:{
+									account:$('#account').val(),
+									password:$('#password').val(),
+								},
+						})
+						}
+					},
+				})
+			})
+		})
+	</script>
+	<body>
+		<div id="info">
+		<p><i class="fa fa-user"></i>用户名<input type="text" name="account" id="account" value="" /></p>
+		<p><i class="fa fa-key"></i>密码<input  type="password" name="password" id="password" value="" /></p>
+		<p class="last"><input type="submit" name="submit" id="sub" value="登录" /></p>
+		<a href="register.html">没有账号？</a>
+		</div>
+	</body>
+</html>

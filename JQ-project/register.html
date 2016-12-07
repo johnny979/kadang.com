@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="jquery-validation-1.15.0/dist/jquery.validate.js" ></script>
+		<script type="text/javascript" src="jquery-validation-1.15.0/dist/jquery.metadata.js" ></script>
+		<script type="text/javascript" src="jquery-validation-1.15.0/dist/localization/messages_zh.js" ></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			#info {
+				width: 400px;
+				height: 600px;
+				margin: 0 auto;
+			}
+			body{
+				height: 100%;
+				background: url(img/千库网-炫彩背景素材高大尚酷炫.jpg) no-repeat;
+				background-size: cover;
+			}
+			p {
+				height: 50px;
+				line-height: 50px;
+				text-align: right;
+				border: 1px solid #ddd;
+				margin-top: 20px;
+				color: darkgreen;
+				font-size: 18px;
+				font-weight: bolder;
+			}
+			p.last {
+				border: none;
+			}
+			input {
+				font-size: 16px;
+				height: 48px;
+				padding-left: 20px;
+				margin-left: 30px;
+				border: 1px solid #9c6082;
+				float: right;
+			}
+			input[name=account],input[name='password'],input[name='isPsw'],input[name=username], input[name=mail] {
+				width: 240px;
+				
+			}
+			input[name=phone] {
+				width: 163px;
+				margin-left: 5px;
+				float: right;
+			}
+			input[name=area] {
+				width: 50px;
+				border-color: #2e5f32;
+				float: right;
+			}
+			input[name=verCode] {
+				width: 130px;
+			}
+			input[name=getVer] {
+				width: 103px;
+				margin-left: 5px;
+			}
+			input[type=button] {
+				height: 50px;
+				text-align: center;
+				padding: 0;
+			}
+			input[name=submit] {
+				width: 400px;
+				height: 50px;
+				background-color: #8e488e;
+				font-weight: bold;
+				color: #fff;
+				border-radius: 10px;
+			}
+			i{
+				display: block;
+				float: left;
+				margin-top:15px ;
+				margin-left: 10px;
+			}
+			a{
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info">
+			<p><i class="fa fa-user"></i>用户名<input type="text" id="username" name="username" placeholder="输入用户名" /></p>
+			<p><i class="fa fa"></i>姓名<input type="text" id="account" name="account" placeholder="输入姓名" /></p>
+			<p><i class="fa fa-mail"></i>邮箱<input type="text" id="mail" name="mail" placeholder="输入邮箱" /></p>
+			<p><i class="fa fa-lock"></i>密码<input type="password" id="password" name="password" placeholder="输入密码" /></p>
+			<p><i class="fa fa-lock"></i>确认密码<input type="password" id="repassword" name="repassword" placeholder="输入确认密码" /></p>
+			<p><i class="fa fa-phone"></i>手机号码<input type="text" id="phone" name="phone" placeholder="输入手机号码" /><input type="text" name="area" value="+86" /></p>
+			<!--<p>手机验证码<input type="button" name="getVer" value="获取验证码" /><input type="text" name="verCode" placeholder="输入手机验证码" /></p>-->
+			<p class="last"><input id="sub" type="button" name="submit" value="注册"/></p>
+			<a href="login.html">已有账号？点击登录</a>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+			$(function(){
+				$('form').validate({
+					rules:{
+						account:{
+							required:true
+						},
+						password:{
+							required:true
+						},
+						repassword:{
+							required:true
+						},
+						username:{
+							requiredd:true
+						},
+						phone:{
+							required:true
+						},
+						mail:{
+							required:true
+						}
+					}
+					
+					
+				})
+				$('#sub').click(function(){
+					console.log($('form').validate());
+					
+					$.ajax({
+						type:"post",
+						url:"http://10.16.151.33/course/api/api/student/Register",
+						async:true,
+						data:{
+							account:$('#account').val(),
+							password:$('#password').val(),
+							username:$('#username').val(),
+							phone:$('#phone').val(),
+							mail:$('#mail').val(),
+							classes:1609
+						},
+						beforeSend:function(){
+							console.log(location.href);
+						},
+						success:function(data){
+							console.log(data);
+						}
+					});
+				})
+			})
+		</script>
+	
+</html>

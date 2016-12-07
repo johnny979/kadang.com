@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/common.js"></script>
+		<script src="js/base.js"></script>
+	</head>
+	<body>
+		<!--右侧悬浮栏-->
+		<div id="tool" style="width:40px;height: 221px;position: fixed;right: 10px;bottom: 60px;">
+			<ul>
+				<li style="background:url(img/index/wenwo.png) no-repeat center top #f4f4f4;cursor:pointer;width:24px;height: 30px;margin-bottom:10px;padding: 38px 8px 4px 8px;border: 1px solid #DFDFDF;">送礼问我</li>
+				<li style="cursor:pointer;width:24px;height: 30px;margin-bottom:10px;border: 1px solid #DFDFDF;">我的收藏</li>
+				<li style="cursor:pointer;width:24px;height: 30px;margin-bottom:10px;border: 1px solid #DFDFDF;">我有话说</li>
+				<li style="cursor:pointer;width:24px;height: 30px;margin-bottom:10px;border: 1px solid #DFDFDF;background: url(img/index/wxicon.png) no-repeat center #f4f4f4;"></li>
+				<li class="Btop" style="display:none;cursor:pointer;width:24px;height: 30px;margin-bottom:10px;border: 1px solid #DFDFDF;background: url(img/index/online.png) no-repeat #f4f4f4;"></li>
+			</ul>
+		</div>
+		<!--登陆/注册按钮-->
+		<div id="N-login">
+			<div class="close"></div>
+			<dl class="other-login">
+            <dt>
+            <p style="line-height:26px;font-size: 18px;color: #333">无需注册</p>
+            <p style="line-height:22px;font-size: 14px;color: #999;" class="c999 f14">直接使用社交账号登录</p>
+            </dt>
+            <dd><a  title="新浪微博" class="sina" >微博</a></dd>
+            <dd style="background-position:0 -69px ;"><a  title="QQ登陆" class="qq" >QQ</a></dd>
+            <dd style="background-position:0 -138px ;"><a  title="支付宝快捷登陆" class="alipay">支付宝</a></dd>
+            </dl>
+            <div id="L-login">
+            	<p class="act" style="line-height:38px;font-size: 18px;color: #333;margin-bottom: 5px;">用户登录</p>
+            	<input class="mail" name="mail" type="text" placeholder="邮箱"/><span class="MT">格式不正确，请输入邮件格式！</span>
+            	<input style="background-position: 5px -238px;" class="password" name="password"  type="password" placeholder="密码"/><span class="PT">密码长度需介于 6 和 20 之间<br /></span>
+            	<label style="width:96px;height:16px;color: #999;"><input id="No-load" style="width: 12px;height: 12px;border: 1px solid #DFDFDF;" type="checkbox" />下次自动登录</label>
+            	<div class='con'><i class="con">《卡当客户协议》</i></div>
+            	<input id="LorR" style="background: #f6614b;width: 320px;height: 45px;border-radius: 3px;padding:0;font-weight:bolder;font-size: 20px;color: #FFFFFF;cursor: pointer;" type="button" value="立即登录" /><br  />
+            	
+            	<span class="countT" style="float: left;">还没有账号？</span>
+            	<a class="tips">注册</a>
+            	<a class="forget" style="float: right;">忘记密码？</a>
+            </div>
+		</div>
+		<div id="header">
+			<a id="index" href="index.html"></a>
+			<span>Hi，欢迎来到卡当网</span>
+			<ul id="login">
+				<li>&nbsp登录</li>
+				<li>&nbsp注册</li>
+			</ul>
+			<ul id="self">
+				<li class="MyKD"><a>我的卡当</a><i class="fa fa-angle-down"></i></li>
+				<li class="cart"><i class="fa fa-shopping-cart"></i><a>购物车</a><i class="fa fa-angle-down"></i></li>
+				<li class="phone"><i class="fa fa-mobile-phone"></i><a>手机版</a></li>
+				<li class="Myfav"><a>我的收藏</a><i class="fa fa-angle-down"></i></li>
+				<li class="onlineS"><a>线客服</a>在</li>
+				<li class="likeIt"><a>收藏卡当网</a></li>
+			</ul>
+			<ul class="Myacc">
+				<li><a>我的订单</a></li>
+				<li><a>我的优惠券</a></li>
+			</ul>
+			<ul class="Mycart">
+				<li>买泥马勒戈壁</li>
+			</ul>
+			<img class="QR" src="img/index/未标题-1.jpg">
+			<ul class="MyLike">
+				<li><a>收藏的商品</a></li>
+				<li><a>收藏的店铺</a></li>
+			</ul>
+		</div>
+		<!--搜索框-->
+		<div id="search">
+			<div id="search-blank">
+				<form>
+					<input type="text" name="searcher" id="I-searcher" placeholder="七夕想送女朋友什么？" />
+					<button class="S-button" type="text"><i class="fa fa-search fa-2x"></i></button>
+				</form>
+				
+				&nbsp&nbsp<a>送女朋友</a>&nbsp<a>浪漫定制</a>&nbsp<a>我的订单查询</a>
+			</div>
+			<img id="cons" src="img/index/kdDes.png"/>
+		</div>
+		
+		
+		<!--导航栏-->
+		<div id="nav-p">
+			<ul id="dif">
+				<li><a>暖心礼物</a><img src="img/index/navHot.gif"></li>
+				<li><a>送女生</a></li>
+				<li><a>送男生</a></li>
+				<li><a>生日礼物</a></li>
+				<li><a>小创意大心意</a></li>
+				<li><a>约会送花</a></li>
+			</ul>
+			<span id="slide"></span>
+		</div>
+
+	</body>
+</html>

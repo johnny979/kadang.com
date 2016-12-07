@@ -1,0 +1,10 @@
+{
+	"data": [
+		{"id": 1, "src": "img/goods-j/1.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 190},
+		{"id": 1, "src": "img/goods-j/2.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 120},
+		{"id": 1, "src": "img/goods-j/3.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 520},
+		{"id": 1, "src": "img/goods-j/4.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 250},
+		{"id": 1, "src": "img/goods-j/5.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 340},
+		{"id": 1, "src": "img/goods-j/6.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 567}	
+	]
+}

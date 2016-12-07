@@ -1,0 +1,370 @@
+/*头部CSS*/
+			#header{
+				margin: auto;
+				width: 1200px;
+				height: 25px;
+				border-bottom:1px solid #CCCCCC ;
+				position: relative;
+				line-height: 25px;
+				color: #989898;
+				z-index: 99;
+			}
+			#index{
+				
+				width: 150px;
+				height: 170px;
+				background: url(../img/index/卡当Title.jpg);
+				position: absolute;
+				left:0;
+				top: 0;
+				z-index: 99;
+			}
+			#header span{
+				margin-left: 162px;
+				float: left;
+			}
+			#login{
+				margin-bottom: 5px;
+				float: left;
+			}
+			#login li{
+				margin-left:5px ;
+				cursor: pointer;
+				float: left;
+				
+			}
+			#login  li:hover{
+				color: red;
+			}
+			#self{
+				float: right;
+			}
+			#self li{
+				float: left;
+				width: 78px;
+				cursor: pointer;
+				text-align: center;
+			}
+			#header li a{
+				cursor: pointer;
+			}
+			#self li i{
+				margin-right:5px ;
+			}
+			/*#self li:hover{
+				width: 76px;
+				color: red;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				border-bottom: none;
+			}*/
+			#self .hover{
+				width: 76px;
+				color: red;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				border-bottom: none;
+			}
+			#self .hoverNo{
+				
+				
+			}
+			li[class=likeIt]:hover{
+				width: 78px;
+				color: red;
+			}
+			li[class=onlineS]:hover{
+				width: 78px;
+				color: red;
+			}
+			#header .Myacc{
+				width: 76px;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				background: #fff;
+				position: absolute;
+				right: 390px;
+				top: 25px;
+				display: none;
+				text-align: center;
+			}
+			#header .Mycart{
+				width: 76px;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				background: #fff;
+				position: absolute;
+				right: 312px;
+				top: 25px;
+				display: none;
+			}
+			#header .QR{
+				width: 76px;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				background: #fff;
+				position: absolute;
+				right: 234px;
+				top: 25px;
+				display: none;
+			}
+			#header .MyLike{
+				width: 76px;
+				border: 1px solid #CCCCCC;
+				border-top:none ;
+				background: #fff;
+				position: absolute;
+				right: 156px;
+				top: 25px;
+				display: none;
+				text-align: center;
+			}
+			
+			
+			
+			/*搜索栏*/
+			#search{
+				width: 1200px;
+				height: 98px;
+				margin: auto;
+				border-bottom: 1px solid #CCCCCC;
+				position: relative;
+			}
+			#search-blank{
+				width: 500px;
+				position: absolute;
+				left: 408px;
+				top:20px;
+			}
+			#search-blank a{
+				font-size:12px ;
+				color: #6a6a6a;
+			}
+			#search-blank input[name=searcher]{
+				width: 348px;
+				height: 30px;
+				border: 2px solid red;
+				border-radius:100px ;
+				margin-bottom: 5px;
+				position: relative;
+				outline: none;
+				text-indent: 20px;
+			}
+			#search-blank button{
+				height: 32px;
+				border: none;
+				background: none;
+				position: absolute;
+				left: 312px;
+				outline: none;
+			}
+			#search-blank button:hover{
+				color: red;
+			}
+			#cons{
+				position: absolute;
+				right: 0;
+				top: 17px;
+				
+			}
+			
+			/*导航*/
+			#nav-p{
+				position: relative;
+				margin: auto;
+				width: 1200px;
+				height: 34px;
+				/*background: greenyellow;*/
+				border-bottom:solid 1px #999 ;
+			}
+			#dif{
+				width: 680px;
+				height:34px;
+				margin-left:176px;
+				
+			} 
+			#dif li{
+				font: bold 15px/34px "微软雅黑" ;
+				float: left;
+				padding-right: 52px;
+				cursor: pointer;
+				position: relative;
+			}
+			#dif li a:hover{
+				color: #f76045;
+			}
+			#dif li img{
+				position: absolute;
+				left: 60px;
+				top: 0;
+			}
+			#slide{
+				width: 60px;
+				height: 2px;
+				position: absolute;
+				left: 0;
+				top: 34px;
+				background: #f76045;
+				display: none;
+			}
+			
+		/*登陆部分*/
+			#N-login{
+				width: 0;
+				height: 616px;
+				background: #fff;
+				position:fixed ;
+				right: 0;
+				top:0;
+				z-index: 100;
+				overflow: hidden;
+			}
+			#L-login{
+				width: 345px;
+				height: 287px;
+				position: absolute;
+				left: 445px;
+				top: 75px;
+				border-left: 1px solid #dfdfdf;
+				padding-left:27px;
+			}
+			#L-login input{
+				width: 313px;
+				height: 34px;
+				border: 1px solid #DFDFDF;
+				outline: red;
+				margin: 15px 0 ;
+				background: url(../img/index/login.png) no-repeat left center;
+				background-position:5px -202px;
+				padding-left: 34px;
+			}
+			#L-login a{
+				color: #999;
+				cursor: pointer;
+			}
+			#L-login i{
+				color: #999;
+				cursor: pointer;
+			}
+			#L-login i:hover{
+				color: #f6614b;
+				text-decoration: underline;
+			}
+			#L-login a:hover{
+				color: #f6614b;
+			}
+
+			.other-login{
+				position: absolute;
+				left:249px;
+				top:76px;
+			}
+			.other-login dd{
+				background-image: url(../img/index/login.png);
+   				background-repeat: no-repeat;
+    			background-attachment: scroll;
+   				width: 44px;
+   				height: 25px;
+    			display: block;
+    			padding-top: 44px;
+   				color: #333;
+			    text-align: center;
+			    line-height: 25px;
+			    float: left;
+			    margin-right:18px;
+			    margin-top: 19px;
+			}
+			
+			/*登陆提示*/
+			.MT,.PT{
+				color:#E14835 ;
+				float: right;
+				display: none;
+			}
+
+			#N-login .close{
+				height: 40px;
+				width: 40px;
+				background: url(../img/index/closePop.gif) no-repeat scroll center center #E14835;;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#tool{
+				z-index: 999;
+			}
+			/*左边悬浮栏*/
+			#tool li{
+				background: #f4f4f4;
+				padding: 6px 8px 4px 8px;
+				line-height: 14px;
+			}
+			#tool li:hover{
+				color: #f6614b;
+			}
+
+
+
+			/*尾部css*/
+			#foot{
+				width: 1200px;
+				height: 232px;
+				margin: auto;
+				padding-top: 30px;
+				
+			}
+			.F-bot{
+				background: #fff;
+			}
+			.conduct{
+				margin: 30px 0 0  56px;
+				width: 72px;
+				height: 96px;
+				background: #fff;
+				text-align: center;
+				float: left;
+			}
+			
+			.C-head a{
+				height: 48px;
+				width: 48px;
+				background: url(../img/index/service_8.png);
+				display: block;
+				margin: auto;
+			}
+			.conduct li a{
+				color: ;
+			}
+			.F-top{
+				width: 1200px;
+				height: 125px;
+				margin-bottom: 36px;
+			}
+			.F-bot{
+				width: 1200px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				margin-left: 278px;
+			}
+			.F-bot ul{
+				/*width: 1200px;
+				height: 25px;
+				margin: auto;*/
+			}
+			.F-bot ul li{
+				float: left;
+				margin-right:30px ;
+			}
+			.jump a{
+				color:#606060;
+			}
+			.jump a:hover{
+				text-decoration: underline;
+			}
+			.check{
+				text-align: center;
+				line-height: 32px;
+			}
+
+			
