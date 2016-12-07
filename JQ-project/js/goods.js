@@ -70,19 +70,21 @@ $(function(){
 					var pageNo = _pageindex*obj.pageSize;
 					$("#G-inside").html(" ");
 					var pageCount = obj.totalCount % obj.pageSize > 0 ? parseInt(obj.totalCount / obj.pageSize) + 1 :  parseInt(obj.totalCount / obj.pageSize);
-					var pageFlag = '<a><span class="pageUp">&nbsp</span></a>';
+					//<a><span class="pageUp">&nbsp</span></a>
+					var pageFlag = '';
 					var data = obj.data;
+					console.log(data[0].id);
 					var least = ((pageCount-1)*obj.pageSize);
 					console.log(least);
 					var goods = "";
 					if(_pageindex==pageCount&&pageCount>1){
 						for(least;least<data.length;least++){
-							goods+="<li><img class='pic' src="+data[least].src+' /><span class="intro">'+data[least].title+'</span><span class="price"><a class="T-price"><i>￥<i>'+data[least].price+'</a><a class="rate">'+data[least].rate+'</a></span></li>';
+							goods+="<li class="+data[least].id+"><img class='pic' src="+data[least].src+' /><span class="intro">'+data[least].title+'</span><span class="price"><a class="T-price"><i>￥<i>'+data[least].price+'</a><a class="rate">'+data[least].rate+'</a></span></li>';
 						}
 						
 					}else{
 						for(i;i<pageNo;i++){
-							goods+="<li><img class='pic' src="+data[i].src+' /><span class="intro">'+data[i].title+'</span><span class="price"><a class="T-price"><i>￥<i>'+data[i].price+'</a><a class="rate">'+data[i].rate+'</a></span></li>';
+							goods+="<li class="+data[i].id+"><img class='pic' src="+data[i].src+' /><span class="intro">'+data[i].title+'</span><span class="price"><a class="T-price"><i>￥<i>'+data[i].price+'</a><a class="rate">'+data[i].rate+'</a></span></li>';
 						}
 					}
 					
@@ -102,7 +104,8 @@ $(function(){
 						}
 						pageFlag += ('<span class="pageC">' + j + '</span>');
 					}
-					pageFlag += '<a><span class="pageDown">&nbsp</span></a>';
+					pageFlag += '';
+					//<a><span class="pageDown">&nbsp</span></a>
 					$(pageFlag).appendTo('#pagecode');
 				})
 				return _pageindex;
@@ -110,9 +113,13 @@ $(function(){
 			page(1, true);
 			$('#pagecode').on('click','span', function(evt){
 				$(this).addClass("G-active").siblings().removeClass('G-active');
-				page($(this).index());
+				page($(this).index()+1);
 				var self = $(this);
 			});
-			//上一页，下一页
+			//为其绑定跳转事件
+			$('#G-inside').on('click','li',function(){console.log(123);
+				window.location.href = 'detail.html?goodsId='+$(this).prop('class');
+			})
+			
 
 })

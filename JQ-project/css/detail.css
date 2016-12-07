@@ -79,3 +79,48 @@
 	line-height: 50px;
 	border: 1px solid #DEDEDE;
 }
+/*数量修改*/
+#goods-count{
+	height: 50px;
+	font-size: 15px;
+}
+#goods-count dt{
+	float: left;
+    width: 80px;
+    margin-top: 12px;
+}
+#Make-count{
+	padding-top:8px ;
+	position: relative;
+    z-index: 1;
+    height: 29px;
+    width: 96px;
+    overflow: hidden;
+    float: left;
+}
+#G-count{
+	width: 38px;
+    height: 22px;
+    position: absolute;
+    z-index: 2;
+    left: 27px;
+    border: 1px solid #dedede;
+    padding: 2px 0;
+    text-align: center;
+    color: #343434;
+}
+#Make-count a{
+	position: absolute;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: #f0f0f0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #dedede;
+    text-align: center;
+}
+.plus{
+    left: 66px;
+}

@@ -1,10 +1,10 @@
 {
 	"data": [
-		{"id": 1, "src": "img/goods-j/1.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 190},
-		{"id": 1, "src": "img/goods-j/2.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 120},
-		{"id": 1, "src": "img/goods-j/3.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 520},
-		{"id": 1, "src": "img/goods-j/4.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 250},
-		{"id": 1, "src": "img/goods-j/5.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 340},
-		{"id": 1, "src": "img/goods-j/6.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"只有最顶级的羊绒、最精细的工艺，才能纺出最细的纱线","rate": "img/detail/G-rate.jpg", "price": 567}	
+		{"id": 1, "src": "img/goods-j/1.jpg","title":"送妈妈祝福贺卡 生日贺卡 代写祝福语","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 190},
+		{"id": 2, "src": "img/goods-j/2.jpg","title":"天然草莓晶 石榴石手链 助她改善气血","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 120},
+		{"id": 3, "src": "img/goods-j/3.jpg","title":"VIVI杂志推荐 既是手表 又是漂亮手链","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 520},
+		{"id": 4, "src": "img/goods-j/4.jpg","title":"柔情之美 925纯银项链 体现女性柔美","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 250},
+		{"id": 5, "src": "img/goods-j/5.jpg","title":"熊猫曲奇礼盒装 萌哭外貌协会妹子","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 340},
+		{"id": 6, "src": "img/goods-j/6.jpg","title":"kiss巧克力造型情感氛围小夜灯","det":"img/detail/G-detail.jpg","num":1,"rate": "img/detail/G-rate.jpg", "price": 567}	
 	]
 }

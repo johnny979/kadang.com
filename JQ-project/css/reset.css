@@ -65,3 +65,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 a{ text-decoration: none;color: #666;cursor: pointer;}
 
 html,body{font-size:12px;}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}

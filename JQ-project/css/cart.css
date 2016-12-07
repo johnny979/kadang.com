@@ -18,27 +18,28 @@
 	border: 1px solid #dedede;
 	background: #f8f8f8;
 	margin-bottom: 20px;
+	overflow: auto;
 }
 #Cookie-Goods{
 	width: 1000px;
 }
 #Cookie-Goods th{
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 }
 #Cookie-Goods td{
 	text-align: center;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 }
 #goods-all{
 	text-align: center;
 }
-#goods-all a{
+#goods-all .del{
 	color: #999;
 	cursor: pointer;
 }
-#goods-all a:hover{
+#goods-all .del:hover{
 	text-decoration: underline;
 }
 #Cookie-Goods td img{
@@ -64,7 +65,37 @@
 	color: #635e58;
 	line-height: 86px;
 }
-
-
-
+.plus{
+	cursor: pointer;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: #f0f0f0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #dedede;
+    text-align: center;
+}
+.minus{
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    background: #f0f0f0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #dedede;
+    text-align: center;
+    cursor: pointer;
+}
+.G-count{
+	width: 30px;
+    height: 22px;
+    z-index: 2;
+    border: 1px solid #dedede;
+    padding: 2px 0;
+    text-align: center;
+    color: #343434;
+}
 
